@@ -3,7 +3,7 @@ name: Publish
 on:
   push:
     branches:
-      - '*'
+      - '**'
     paths:
       - 'Dockerfile'
       - 'pre-reqs.sh'
@@ -14,7 +14,7 @@ on:
       - "v*"
   pull_request:
     branches:
-      - master
+      - main
   schedule:
     - cron: '0 1 * * 0'
 
